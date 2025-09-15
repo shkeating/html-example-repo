@@ -8,7 +8,42 @@
 
 <body>
     <header>
-       
+       <nav aria-label="Main navigation">
+            <!-- Top row container for logo and hamburger -->
+
+            <!-- Logo on the left -->
+            <a href="index.html" class="nav-logo" aria-label="Home">
+                <div class="nav-logo-circle">LOGO</div>
+            </a>
+
+            <div class="flex-right">
+            <!-- Hamburger menu button - only visible on mobile -->
+                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+                    <span class="sr-only">Toggle navigation menu</span>
+                </button>
+
+
+             <!-- your HTML pages go in this list-->
+                <ul id="main-nav" aria-expanded="false">
+                    <li>
+                        <a href="salamanders.html">
+                            Salamanders
+                        </a>
+                    </li>
+                    <li>
+                        <a href="snakes.html">
+                            Snakes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="spiders.html">
+                           Spiders
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
         <h1>Salamanders</h1>
@@ -26,6 +61,7 @@
         Copyright 2025
     </footer>
 
+     <script src="nav.js"></script>
 </body>
 
 </html>
