@@ -332,7 +332,6 @@ details>*:not(summary) {
 img {
     border: 2px dashed #999;
     background: #f0f0f0;
-    padding: 20px;
     display: block;
     margin: 20px 0;
     max-width: 100%;
