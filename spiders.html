@@ -4,7 +4,9 @@
 <head>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Spiders: Creepy Critters</title>
+            <link rel="stylesheet" href="nav.css">    
     <link rel="stylesheet" href="style.css">
+
     <meta property="og:type" content="website">
 <meta property="og:title" content="Creepy Crawlers">
 <meta property="og:url" content="https://shkeating.github.io/html-example-repo/">
@@ -13,49 +15,63 @@
 </head>
 
 <body>
-    <header>
-        <nav aria-label="Main navigation">
-            <!-- Top row container for logo and hamburger -->
-
-            <!-- Logo on the left -->
-            <a href="index.html" aria-label="Home">
-                <img id="nav-logo"  src="img/cc-logo.png" alt="home" />
+       <header>
+        <div id="brand">
+            <a href="index.html">
+                <img id="nav-logo" width="60px" src="img/cc-logo.png" alt="home" />
             </a>
-
-            <div class="flex-right">
-                <!-- Hamburger menu button - only visible on mobile -->
-                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
-                    <span class="sr-only">Toggle navigation menu</span>
-                </button>
-
-
-                <!-- your HTML pages go in this list-->
-                <ul id="main-nav" aria-expanded="false">
-                    <li>
-                        <a href="salamanders.html">
-                            Salamanders
-                        </a>
-                    </li>
-                    <li>
-                        <a href="snakes.html">
-                            Snakes
-                        </a>
-                    </li>
-                    <li>
-                        <a href="spiders.html">
-                            Spiders
-                        </a>
-                    </li>
-                    <li>
-                        <a href="newpage.html">
-                            New Page
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="salamanders.html">
+                        Salamanders
+                    </a>
+                </li>
+                <li>
+                    <a href="snakes.html">
+                        Snakes
+                    </a>
+                </li>
+                <li>
+                    <a href="spiders.html">
+                        Spiders
+                    </a>
+                </li>
+                <li>
+                    <a href="newpage.html">
+                        New Page
+                    </a>
+                </li>
+            </ul>
         </nav>
-
-
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                 <li>
+                    <a href="salamanders.html">
+                        Salamanders
+                    </a>
+                </li>
+                <li>
+                    <a href="snakes.html">
+                        Snakes
+                    </a>
+                </li>
+                <li>
+                    <a href="spiders.html">
+                        Spiders
+                    </a>
+                </li>
+                <li>
+                    <a href="newpage.html">
+                        New Page
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <main>
